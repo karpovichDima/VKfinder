@@ -3,4 +3,5 @@
     <string name="results">Здесь будет информация с сервера</string>
     <string name="id">Введите id человека</string>
     <string name="search">Найти</string>
+    <string name="error">error</string>
 </resources>
