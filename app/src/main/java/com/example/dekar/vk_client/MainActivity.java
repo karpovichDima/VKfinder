@@ -7,6 +7,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.net.URL;
+
+import static com.example.dekar.vk_client.utils.NetworkUtils.generateURL;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText searchField;
@@ -25,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener onClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                results.setText("Кнопка нажата");
+                URL generatedURL = generateURL(searchField.getText().toString());
+                results.setText(generatedURL.toString());
             }
         };
         searchButton.setOnClickListener(onClickListener);
