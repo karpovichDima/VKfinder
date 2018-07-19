@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">vk_client</string>
+    <string name="results">Здесь будет информация с сервера</string>
+    <string name="id">Введите id человека</string>
+    <string name="search">Найти</string>
+</resources>
